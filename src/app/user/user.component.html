@@ -1,0 +1,19 @@
+<div>
+  <div>User with Id is {{ user.id }}</div>
+  <div>User with Name is {{ user.name }}</div>
+</div>
+
+<div>
+  <a [routerLink]="['/users', 1, 'Angular']"
+     [queryParams]=" {page: 1, search: 'Angular'}"
+     [fragment] ="'loading'">
+     Get Details of Angular
+  </a>
+</div>
+
+
+<div>
+  <button (click)="getJaganDetails()">
+    Get Jagan Details
+  </button>
+</div>
